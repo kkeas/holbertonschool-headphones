@@ -13,12 +13,11 @@
 ============================= */
 
 .header {
+  height: 32px;
   width: 80%;
   justify-content: space-between;
   display: flex;
-  margin: auto;
-  height: 32px;
-
+  align-items: center
 }
 
 .menu {
