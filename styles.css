@@ -1,8 +1,15 @@
-/* Variables
-============================= */
 
 :root {
+  --primary-color: #FFFFFF;
 
+}
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -12,22 +19,103 @@
 /* header
 ============================= */
 
-.header {
-  height: 32px;
-  width: 80%;
+.bg_container {
+  background-image: url(images/headphones_hero_1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top;
+  height: 800px;
+  margin: 0;
+  display: flex;
+}
+
+
+.section_links {
+  height: 31px;
+  width: 1000px;
+  margin: 28px 200px;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+
+}
+
+header img {
+  width: 161px;
+  height: 32px;
   display: flex;
-  align-items: center
 }
 
-.menu {
+header ul {
+  width: 255px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  font-family: "Source Sans Pro", sans-serif;
+  color: var(--primary-color);
+  font-size: 12px;
 }
 
-.menu .div {
-  margin-right: 41px;
+header ul a {
+  text-decoration: none;
+  color: var(--primary-color);
 }
 
-.menu:hover {
+header ul a:hover {
   color: #FF6565;
+}
+
+header section {
+  height: 313px;
+  width: 45.5%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 344px 381px 115px 382px;
+  background-color: transparent;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  color: var(--primary-color);
+}
+
+header h2 {
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+.subtitle {
+  font-size: 16px; 
+  margin-top: 0;
+}
+
+.basic_text {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "SSP text", sans-serif;
+  justify-content: space-around;
+}
+
+button {
+  background-color: #FF6565;
+  border-radius: 22px;
+  height: 44px;
+  width: 162px;
+  border: none;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+  padding: 13px 31px;
+  font-family: "Source Sans Pro";
+  color: var(--primary-color);
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('source-sans-pro/SourceSansPro-Bold.otf');
+}
+
+@font-face {
+  font-family: 'SSP text';
+  src: url('source-sans-pro/SourceSansPro-Light.otf');
 }
