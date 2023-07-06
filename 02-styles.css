@@ -65,6 +65,7 @@ header img {
   width: 161px;
   height: 32px;
   display: flex;
+  justify-content: flex-start;
 }
 
 header ul {
@@ -146,7 +147,7 @@ button {
   order: -1;
   top: 0%;
   left: 0%;
-  display: none;
+  display: block;
   cursor: pointer;
   position: relative;
   user-select: none;
@@ -264,4 +265,8 @@ button {
   font-family: 'SSP text';
   src: url('source-sans-pro/SourceSansPro-Light.otf');
 }
-
+@media (min-width: 767px) {
+  .burger-label {
+      all: unset;
+  }
+}
