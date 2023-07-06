@@ -323,6 +323,10 @@ button {
   flex-direction: column;
 }
 
+.result h1, p {
+  font-family: 'SSP', sans-serif;
+}
+
 /* tablet media query
 =================================== */
 @media (max-width: 768px) {
