@@ -1,0 +1,400 @@
+
+:root {
+  --color-black: #000000;
+  --primary-color: #FFFFFF;
+  --bar1-width: 1.52rem;
+  --bar-input-width: .812rem;
+  --bar3-width: 1.12rem;
+  --bar-height: .125rem;
+  --hamburger-gap: .25rem;
+  --color-orange: #FF6565;
+
+}
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+
+
+
+
+/* header
+============================= */
+
+header {
+  height: 800px;
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.bg_container {
+  background-image: url(images/headphones_hero_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  min-height: 800px;
+  margin: 0;
+  display: flex;
+  width: 100%;
+}
+
+
+
+
+.section_links {
+  height: 31px;
+  width: 71.42%;
+  margin: 28px 14.24%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+
+}
+
+header img {
+  width: 161px;
+  height: 32px;
+  display: flex;
+}
+
+header ul {
+  width: 255px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  font-family: "Source Sans Pro", sans-serif;
+  color: var(--primary-color);
+  font-size: 12px;
+}
+
+header ul a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+header ul a:hover {
+  color: #FF6565;
+}
+
+header section {
+  height: 313px;
+  width: 45.5%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 344px 381px 115px 382px;
+  background-color: transparent;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  color: var(--primary-color);
+}
+
+header h2 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.subtitle {
+  font-size: 16px; 
+  margin-top: 0;
+}
+
+.basic_text {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "SSP text", sans-serif;
+  justify-content: space-around;
+}
+
+button {
+  background-color: #FF6565;
+  border-radius: 22px;
+  height: 44px;
+  width: 162px;
+  border: none;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+  padding: 13px 31px;
+  font-family: "Source Sans Pro";
+  color: var(--primary-color);
+}
+
+/* hamburger menu
+================================== */
+
+#burger-check {
+  width: 30px;
+  transition: all .2s ease-in-out;
+}
+
+#burger-check:checked {
+  width: 4px;
+}
+
+#burger-label {
+  order: -1;
+  top: 0%;
+  left: 0%;
+  display: none;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+  padding: 2.5rem;
+}
+
+#burger-line,
+#burger-line::before,
+#burger-line::after {
+  position: relative;
+  display: block;
+  background: var(--primary-color);
+  height: .15rem;
+  width: 1.2rem;
+  transition: all .2s ease-in-out;
+}
+
+#burger-line::before {
+  position: absolute;
+  content: "";
+  width: 1.7rem;
+  top: -0.5rem;
+}
+
+#burger-line::after {
+  position: absolute;
+  content: "";
+  width: 1.7rem;
+  top: 0.5rem;
+}
+
+
+#burger-check:checked~* #burger-line::before {
+  top: 0;
+  left: 0;
+  transform: rotate(45deg);
+}
+
+#burger-check:checked~* #burger-line {
+  background-color: transparent;
+  width: 0rem;
+}
+
+#burger-check:checked~* #burger-line::after {
+  top: 0;
+  left: 0;
+  transform: rotate(-45deg);
+}
+
+/* What we do
+================================== */
+.whatitdo {
+  display: flex;
+  width: 39.8rem;
+  height: 11.5rem;
+  margin-top: 6.87rem;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.whatitdo h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2rem;
+}
+
+.whatitdo p {
+  font-family: 'SSP', sans-serif;
+  font-size: 1rem;
+}
+
+.whatitdo .body_section {
+  align-items: flex-start;
+}
+
+.body_section {
+  display: flex;
+  align-items: center;
+  height: 40.625rem;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whaticon p {
+  font-family: 'SSP', sans-serif;
+  font-size: 1rem;
+
+}
+
+.whaticon h3 {
+  font-family: 'SSP', sans-serif;
+}
+
+.whaticon {
+  color: var(--color-black);
+    height: auto;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    padding: 70px;
+    margin-bottom: 110px;
+    max-width: 1000px;
+    flex-direction: column;
+}
+.holberton_school-icon-ic_sound,
+.holberton_school-icon-ic_video,
+.holberton_school-icon-ic_music,
+.holberton_school-icon-ic_hearing {
+    color: var(--color-orange);
+    font-size: 5rem;
+}
+
+/* Results Section 
+================================== */
+.results {
+  background-image: url(images/headphones_hero_2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40.625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--primary-color);
+  z-index: 1;
+}
+
+.resultwords {
+  font-family: 'SSP', sans-serif;
+  display: flex;
+  width: 39.8rem;
+  height: 11.5rem;
+  margin-top: 6.87rem;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.resulticons {
+  height: auto;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  padding: 70px;
+  margin-bottom: 110px;
+  max-width: 1000px;
+  flex-direction: row;
+}
+
+.result {
+  background-image: url(images/pentagone.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+  height: 11.875rem;
+  width: 11.875rem;
+  padding: 11.875rem;
+  flex-shrink: 0;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  margin-bottom: 110px;
+  flex-direction: column;
+}
+
+/* tablet media query
+=================================== */
+@media (max-width: 768px) {
+  .bg_container {
+    height: 800px;
+    background-size: cover;
+  }
+
+  header section {
+    width: 637px;
+    margin: 372px 65px 115px 66px;
+  }
+}
+
+/* mobile phone media query
+================================== */
+
+@media (max-width: 375px) {
+  .hamburgs {
+    display: flex;
+  }
+
+  .bg_container {
+    height: 869px;
+    width: 100%;
+    background-position: 38% 50%;
+    }
+
+  nav {
+    display: none;
+  }
+
+  .section_links {
+    width: 247px;
+    justify-content: space-between;
+    margin-left: 1.5rem;
+    }
+   
+  ul a {
+    display: none;
+  }
+  header section {
+    margin: 20rem 0.5rem 0;
+    width: 100%;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .subtitle {
+    width: 17.43rem;
+    margin: auto;
+  }
+
+  .basic_text{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+  }
+  }
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('source-sans-pro/SourceSansPro-Bold.otf');
+}
+
+@font-face {
+  font-family: 'SSP text';
+  src: url('source-sans-pro/SourceSansPro-Light.otf');
+}
+
+@font-face {
+  font-family: 'holberton_school-icon';
+  src: url('holberton_school-icon/style.css');
+}
+
