@@ -1,0 +1,267 @@
+
+:root {
+  --primary-color: #FFFFFF;
+  --bar1-width: 1.52rem;
+  --bar-input-width: .812rem;
+  --bar3-width: 1.12rem;
+  --bar-height: .125rem;
+  --hamburger-gap: .25rem;
+
+}
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+
+
+
+
+/* header
+============================= */
+
+header {
+  height: 800px;
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.bg_container {
+  background-image: url(images/headphones_hero_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  min-height: 800px;
+  margin: 0;
+  display: flex;
+  width: 100%;
+}
+
+
+
+
+.section_links {
+  height: 31px;
+  width: 71.42%;
+  margin: 28px 14.24%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+
+}
+
+header img {
+  width: 161px;
+  height: 32px;
+  display: flex;
+}
+
+header ul {
+  width: 255px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  font-family: "Source Sans Pro", sans-serif;
+  color: var(--primary-color);
+  font-size: 12px;
+}
+
+header ul a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+header ul a:hover {
+  color: #FF6565;
+}
+
+header section {
+  height: 313px;
+  width: 45.5%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 344px 381px 115px 382px;
+  background-color: transparent;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  color: var(--primary-color);
+}
+
+header h2 {
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+.subtitle {
+  font-size: 16px; 
+  margin-top: 0;
+}
+
+.basic_text {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "SSP text", sans-serif;
+  justify-content: space-around;
+}
+
+button {
+  background-color: #FF6565;
+  border-radius: 22px;
+  height: 44px;
+  width: 162px;
+  border: none;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+  padding: 13px 31px;
+  font-family: "Source Sans Pro";
+  color: var(--primary-color);
+}
+
+/* hamburger menu
+================================== */
+
+#burger-check {
+  width: 30px;
+  transition: all .2s ease-in-out;
+}
+
+#burger-check:checked {
+  width: 4px;
+}
+
+#burger-label {
+  order: -1;
+  top: 0%;
+  left: 0%;
+  display: none;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+  padding: 2.5rem;
+}
+
+#burger-line,
+#burger-line::before,
+#burger-line::after {
+  position: relative;
+  display: block;
+  background: var(--primary-color);
+  height: .15rem;
+  width: 1.2rem;
+  transition: all .2s ease-in-out;
+}
+
+#burger-line::before {
+  position: absolute;
+  content: "";
+  width: 1.7rem;
+  top: -0.5rem;
+}
+
+#burger-line::after {
+  position: absolute;
+  content: "";
+  width: 1.7rem;
+  top: 0.5rem;
+}
+
+
+#burger-check:checked~* #burger-line::before {
+  top: 0;
+  left: 0;
+  transform: rotate(45deg);
+}
+
+#burger-check:checked~* #burger-line {
+  background-color: transparent;
+  width: 0rem;
+}
+
+#burger-check:checked~* #burger-line::after {
+  top: 0;
+  left: 0;
+  transform: rotate(-45deg);
+}
+/* tablet media query
+=================================== */
+@media (max-width: 768px) {
+  .bg_container {
+    height: 800px;
+    background-size: cover;
+  }
+
+  header section {
+    width: 637px;
+    margin: 372px 65px 115px 66px;
+  }
+}
+
+/* mobile phone media query
+================================== */
+
+@media (max-width: 375px) {
+  .hamburgs {
+    display: flex;
+  }
+
+  .bg_container {
+    height: 869px;
+    width: 100%;
+    background-position: 38% 50%;
+    }
+
+  nav {
+    display: none;
+  }
+
+  .section_links {
+    width: 247px;
+    justify-content: space-between;
+    margin-left: 1.5rem;
+    }
+   
+  ul a {
+    display: none;
+  }
+  header section {
+    margin: 20rem 0.5rem 0;
+    width: 100%;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .subtitle {
+    width: 17.43rem;
+    margin: auto;
+  }
+
+  .basic_text{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+  }
+  }
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('source-sans-pro/SourceSansPro-Bold.otf');
+}
+
+@font-face {
+  font-family: 'SSP text';
+  src: url('source-sans-pro/SourceSansPro-Light.otf');
+}
+
