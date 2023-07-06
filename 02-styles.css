@@ -1,11 +1,13 @@
 
 :root {
+  --color-black: #000000;
   --primary-color: #FFFFFF;
   --bar1-width: 1.52rem;
   --bar-input-width: .812rem;
   --bar3-width: 1.12rem;
   --bar-height: .125rem;
   --hamburger-gap: .25rem;
+  --color-orange: #FF6565;
 
 }
 
@@ -65,7 +67,6 @@ header img {
   width: 161px;
   height: 32px;
   display: flex;
-  justify-content: flex-start;
 }
 
 header ul {
@@ -103,7 +104,7 @@ header section {
 }
 
 header h2 {
-  font-size: 32px;
+  font-size: 2rem;
   margin-bottom: 0;
 }
 
@@ -147,7 +148,7 @@ button {
   order: -1;
   top: 0%;
   left: 0%;
-  display: block;
+  display: none;
   cursor: pointer;
   position: relative;
   user-select: none;
@@ -196,6 +197,74 @@ button {
   left: 0;
   transform: rotate(-45deg);
 }
+
+/* What we do
+================================== */
+.whatitdo {
+  display: flex;
+  width: 39.8rem;
+  height: 11.5rem;
+  margin-top: 6.87rem;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.whatitdo h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2rem;
+}
+
+.whatitdo p {
+  font-family: 'SSP', sans-serif;
+  font-size: 1rem;
+}
+
+.whatitdo .body_section {
+  align-items: flex-start;
+}
+
+.body_section {
+  display: flex;
+  align-items: center;
+  height: 40.625rem;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whaticon p {
+  font-family: 'SSP';
+
+}
+
+.whaticon {
+  color: var(--color-black);
+    height: auto;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    padding: 70px;
+    margin-bottom: 110px;
+    max-width: 1000px;
+    flex-direction: column;
+}
+.holberton_school-icon-ic_sound,
+.holberton_school-icon-ic_video,
+.holberton_school-icon-ic_music,
+.holberton_school-icon-ic_hearing {
+    color: var(--color-orange);
+    font-size: 5rem;
+}
+
+
 /* tablet media query
 =================================== */
 @media (max-width: 768px) {
@@ -265,8 +334,9 @@ button {
   font-family: 'SSP text';
   src: url('source-sans-pro/SourceSansPro-Light.otf');
 }
-@media (min-width: 767px) {
-  .burger-label {
-      all: unset;
-  }
+
+@font-face {
+  font-family: 'holberton_school-icon';
+  src: url('holberton_school-icon/style.css');
 }
+
