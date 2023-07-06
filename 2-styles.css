@@ -297,14 +297,13 @@ button {
 }
 
 .resulticons {
-  height: auto;
   text-align: center;
-  margin: auto;
   display: flex;
-  padding: 70px;
   margin-bottom: 110px;
-  max-width: 1000px;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .result {
@@ -312,15 +311,20 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   z-index: 0;
-  height: 11.875rem;
-  width: 11.875rem;
-  padding: 11.875rem;
-  flex-shrink: 0;
+  width: 190px;
+  height: 190px;
+  background-size: cover;
+  justify-content: space-around;
   text-align: center;
   margin: auto;
   display: flex;
-  margin-bottom: 110px;
   flex-direction: column;
+}
+
+.result div {
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
 }
 
 .result h1, p {
