@@ -241,8 +241,13 @@ button {
 }
 
 .whaticon p {
-  font-family: 'SSP';
+  font-family: 'SSP', sans-serif;
+  font-size: 1rem;
 
+}
+
+.whaticon h3 {
+  font-family: 'SSP', sans-serif;
 }
 
 .whaticon {
