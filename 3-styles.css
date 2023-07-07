@@ -269,6 +269,8 @@ button {
     font-size: 5rem;
 }
 
+
+
 /* Results Section 
 ================================== */
 .results {
@@ -343,6 +345,51 @@ button {
 .result p {
   font-size: 14px;
   display: flex;
+}
+/* contact us */
+
+.section-title {
+  text-align: center;
+  align-items: flex-start;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+form {
+  width: 335px;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  display: flex;
+  }
+.form {
+  width: 100%;
+}
+.contactus {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 335px;
+  height: 373px;
+}
+
+form .cub {
+  align-items: center;
+}
+
+.contactus-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40.625rem;
+}
+
+.contactus p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
 }
 
 /* tablet media query
