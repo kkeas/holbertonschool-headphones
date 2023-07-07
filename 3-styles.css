@@ -130,6 +130,7 @@ button {
   padding: 13px 31px;
   font-family: "Source Sans Pro";
   color: var(--primary-color);
+  align-items: center;
 }
 
 /* hamburger menu
@@ -371,10 +372,6 @@ form {
   flex-direction: column;
   width: 335px;
   height: 373px;
-}
-
-form .cub {
-  align-items: center;
 }
 
 .contactus-section {
