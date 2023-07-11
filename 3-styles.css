@@ -359,8 +359,12 @@ button {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  margin-bottom: 56px;
 }
 
+.cta-button {
+  box-shadow: none;
+}
 form {
   width: 335px;
   flex-direction: column;
