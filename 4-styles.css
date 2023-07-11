@@ -435,13 +435,15 @@ footer a {
   justify-content: space-between;
   align-items: center;
 }
+
 #footline {
   background-image: url('images/logo_headphones.png');
   background-repeat: no-repeat;
   width: 200px;
   height: 35px;
   background-size: 90% auto;
-  margin-left: 10px;
+  margin-left: 200px;
+  margin-top: 92px;
   align-items: center;
   justify-content: center;
 }
@@ -452,6 +454,8 @@ footer a {
   height: 30px;
   flex-direction: row;
   color: var(--color-white);
+  margin-right: 200px;
+  margin-top: 92px;
 }
 
 footer .social span {
@@ -467,7 +471,8 @@ footer .social span {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  margin-bottom: 0;
+  margin-bottom: 39px;
+  opacity: 0.351;
 }
 
 
