@@ -422,22 +422,30 @@ footer {
   align-items: center;
 }
 
+footer a {
+  list-style: none;
+  text-decoration: none;
+  font-family: 'holberton_school-icon';
+  color: white;
+}
 #footline {
   background-image: url('images/logo_headphones.png');
   background-repeat: no-repeat;
   width: 200px;
   height: 35px;
   background-size: 90% auto;
-  margin-left: 10px;
+  margin-left: 200px;
+  justify-self: start;
 }
 
 .social {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   width: 130px;
   height: 30px;
+  justify-content: flex-end;
   flex-direction: row;
-  align-items: flex-start;
   color: var(--color-white);
 }
 
