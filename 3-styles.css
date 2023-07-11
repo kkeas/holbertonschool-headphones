@@ -2,6 +2,7 @@
 :root {
   --color-black: #000000;
   --primary-color: #FFFFFF;
+  --color-dark-gray: #071629; 
   --bar1-width: 1.52rem;
   --bar-input-width: .812rem;
   --bar3-width: 1.12rem;
@@ -353,18 +354,22 @@ button {
   text-align: center;
   align-items: flex-start;
   font-family: 'Source Sans Pro', sans-serif;
+  color: #071629;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 form {
   width: 335px;
   flex-direction: column;
   gap: 10px;
-  align-items: flex-start;
+  align-items: center;
   display: flex;
+  justify-content: space-between;
   }
-.form {
-  width: 100%;
-}
+
 .contactus {
   display: flex;
   justify-content: space-around;
@@ -389,6 +394,19 @@ form {
   gap: 10px;
 }
 
+form input,
+textarea {
+  font-family: 'SSP', sans-serif;
+  border: none;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--color-dark-gray);
+  width: 100%;
+  margin-bottom: 45px;;
+}
+
+textarea {
+  resize: none;
+}
 /* tablet media query
 =================================== */
 @media (max-width: 768px) {
@@ -430,6 +448,7 @@ form {
   ul a {
     display: none;
   }
+
   header section {
     margin: 20rem 0.5rem 0;
     width: 100%;
